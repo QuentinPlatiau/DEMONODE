@@ -3,9 +3,7 @@ export class BerlinClock {
         return (time.getMinutes()%5)+" block jaune";
     }
     fiveMinuteLine(time){
-        if(Math.floor(time.getMinutes()/5) === 0) return "0 block jaune";                       
-        if(Math.floor(time.getMinutes()/5) === 1) return "1 block jaune";                       
-        if(Math.floor(time.getMinutes()/5) === 2) return "2 block jaune";                       
+        if(Math.floor(Math.floor(time.getMinutes()/5)/3) === 0) return (Math.floor(time.getMinutes()/5)) + " block jaune";   
         if(Math.floor(time.getMinutes()/5) === 3) return "2 block jaune et 1 block rouge";                       
         if(Math.floor(time.getMinutes()/5) === 4) return "3 block jaune et 1 block rouge";                       
         if(Math.floor(time.getMinutes()/5) === 5) return "4 block jaune et 1 block rouge";                       
