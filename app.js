@@ -1,11 +1,6 @@
 export class BerlinClock {
     minuteLine(time){
-        if(time.getMinutes() === 0) return "0 block jaune";        
-        if(time.getMinutes() === 1) return "1 block jaune";        
-        if(time.getMinutes() === 2) return "2 block jaune";        
-        if(time.getMinutes() === 3) return "3 block jaune";        
-        if(time.getMinutes() === 4) return "4 block jaune";       
-        if(time.getMinutes() === 5) return "0 block jaune";
+        return (time.getMinutes()%5)+" block jaune";
     }
     fiveMinuteLine(time){
         if(Math.floor(time.getMinutes()/5) === 0) return "0 block jaune";                       
