@@ -65,4 +65,94 @@ describe("the first minute line", function() {
         //assert
         expect(result).toBe("1 block jaune");
     });
+    it("minuteLine given 11.00 should return 2 block jaune", function(){
+        //arrange
+        let time = new Date('March 13, 08 00:11:00');
+        //act
+        let result = berlinClock.minuteLine(time);
+        console.log(result);
+        //assert
+        expect(result).toBe("2 block jaune");
+    });
+    it("minuteLine given 16.00 should return 3 block jaune", function(){
+        //arrange
+        let time = new Date('March 13, 08 00:16:00');
+        //act
+        let result = berlinClock.minuteLine(time);
+        console.log(result);
+        //assert
+        expect(result).toBe("3 block jaune");
+    });
+    it("minuteLine given 21.00 should return 4 block jaune", function(){
+        //arrange
+        let time = new Date('March 13, 08 00:021:00');
+        //act
+        let result = berlinClock.minuteLine(time);
+        console.log(result);
+        //assert
+        expect(result).toBe("4 block jaune");
+    });
+    it("minuteLine given 26.00 should return 5 block jaune", function(){
+        //arrange
+        let time = new Date('March 13, 08 00:26:00');
+        //act
+        let result = berlinClock.minuteLine(time);
+        console.log(result);
+        //assert
+        expect(result).toBe("5 block jaune");
+    });
+    it("minuteLine given 31.00 should return 6 block jaune", function(){
+        //arrange
+        let time = new Date('March 13, 08 00:031:00');
+        //act
+        let result = berlinClock.minuteLine(time);
+        console.log(result);
+        //assert
+        expect(result).toBe("6 block jaune");
+    });
+    it("minuteLine given 36.00 should return 7 block jaune", function(){
+        //arrange
+        let time = new Date('March 13, 08 00:036:00');
+        //act
+        let result = berlinClock.minuteLine(time);
+        console.log(result);
+        //assert
+        expect(result).toBe("7 block jaune");
+    });
+    it("minuteLine given 41.00 should return 8 block jaune", function(){
+        //arrange
+        let time = new Date('March 13, 08 00:041:00');
+        //act
+        let result = berlinClock.minuteLine(time);
+        console.log(result);
+        //assert
+        expect(result).toBe("8 block jaune");
+    });
+    it("minuteLine given 46.00 should return 9 block jaune", function(){
+        //arrange
+        let time = new Date('March 13, 08 00:046:00');
+        //act
+        let result = berlinClock.minuteLine(time);
+        console.log(result);
+        //assert
+        expect(result).toBe("9 block jaune");
+    });
+    it("minuteLine given 51.00 should return 10 block jaune", function(){
+        //arrange
+        let time = new Date('March 13, 08 00:51:00');
+        //act
+        let result = berlinClock.minuteLine(time);
+        console.log(result);
+        //assert
+        expect(result).toBe("10 block jaune");
+    });
+    it("minuteLine given 56.00 should return 11 block jaune", function(){
+        //arrange
+        let time = new Date('March 13, 08 00:56:00');
+        //act
+        let result = berlinClock.minuteLine(time);
+        console.log(result);
+        //assert
+        expect(result).toBe("11 block jaune");
+    });
 })
