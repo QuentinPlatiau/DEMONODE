@@ -37,5 +37,14 @@ describe("the first minute line", function() {
         console.log(result);
         //assert
         expect(result).toBe("0 block jaune");
-    })
+    });
+    it("minuteLine given 4.00 should return 0 block jaune", function(){
+        //arrange
+        let time = new Date('March 13, 08 00:04:00');
+        //act
+        let result = berlinClock.minuteLine(time);
+        console.log(result);
+        //assert
+        expect(result).toBe("0 block jaune");
+    });
 })
