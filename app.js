@@ -1,7 +1,11 @@
 export class BerlinClock {
-    minuteLine(time) {
-        console.log(time.getMinutes());
-        if(time.getMinutes() === 0) return "blabkabv";
-        return "fail"        
+    minuteLine(time){
+        if(time.getMinutes() === 0) return "0 block jaune";
     }
 }
+
+
+
+
+
+
