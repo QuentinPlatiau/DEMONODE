@@ -81,7 +81,7 @@ describe("the first minute line", function() {
         let result = berlinClock.fiveMinuteLine(time);
         console.log(result);
         //assert
-        expect(result).toBe("3 block jaune");
+        expect(result).toBe("2 block jaune et 1 block rouge");
     });
     it("fiveMinuteLine given 21.00 should return 4 block jaune", function(){
         //arrange
@@ -90,7 +90,7 @@ describe("the first minute line", function() {
         let result = berlinClock.fiveMinuteLine(time);
         console.log(result);
         //assert
-        expect(result).toBe("4 block jaune");
+        expect(result).toBe("3 block jaune et 1 block rouge");
     });
     it("fiveMinuteLine given 26.00 should return 5 block jaune", function(){
         //arrange
@@ -99,7 +99,7 @@ describe("the first minute line", function() {
         let result = berlinClock.fiveMinuteLine(time);
         console.log(result);
         //assert
-        expect(result).toBe("5 block jaune");
+        expect(result).toBe("4 block jaune et 1 block rouge");
     });
     it("fiveMinuteLine given 31.00 should return 6 block jaune", function(){
         //arrange
@@ -108,7 +108,7 @@ describe("the first minute line", function() {
         let result = berlinClock.fiveMinuteLine(time);
         console.log(result);
         //assert
-        expect(result).toBe("6 block jaune");
+        expect(result).toBe("4 block jaune et 2 block rouge");
     });
     it("fiveMinuteLine given 36.00 should return 7 block jaune", function(){
         //arrange
@@ -117,7 +117,7 @@ describe("the first minute line", function() {
         let result = berlinClock.fiveMinuteLine(time);
         console.log(result);
         //assert
-        expect(result).toBe("7 block jaune");
+        expect(result).toBe("5 block jaune et 2 block rouge");
     });
     it("fiveMinuteLine given 41.00 should return 8 block jaune", function(){
         //arrange
@@ -126,7 +126,7 @@ describe("the first minute line", function() {
         let result = berlinClock.fiveMinuteLine(time);
         console.log(result);
         //assert
-        expect(result).toBe("8 block jaune");
+        expect(result).toBe("6 block jaune et 2 block rouge");
     });
     it("fiveMinuteLine given 46.00 should return 9 block jaune", function(){
         //arrange
@@ -135,7 +135,7 @@ describe("the first minute line", function() {
         let result = berlinClock.fiveMinuteLine(time);
         console.log(result);
         //assert
-        expect(result).toBe("9 block jaune");
+        expect(result).toBe("6 block jaune et 3 block rouge");
     });
     it("fiveMinuteLine given 51.00 should return 10 block jaune", function(){
         //arrange
@@ -144,7 +144,7 @@ describe("the first minute line", function() {
         let result = berlinClock.fiveMinuteLine(time);
         console.log(result);
         //assert
-        expect(result).toBe("10 block jaune");
+        expect(result).toBe("7 block jaune et 3 block rouge");
     });
     it("fiveMinuteLine given 56.00 should return 11 block jaune", function(){
         //arrange
@@ -153,6 +153,6 @@ describe("the first minute line", function() {
         let result = berlinClock.fiveMinuteLine(time);
         console.log(result);
         //assert
-        expect(result).toBe("11 block jaune");
+        expect(result).toBe("8 block jaune et 3 block rouge");
     });
 })
